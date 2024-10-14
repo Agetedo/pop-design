@@ -5,6 +5,7 @@ export default function Intro() {
   return (
     <section className={styles.intro}>
       <img className={styles.introImage} src={introImage} alt="#" />
+      <div className={styles.button}>button</div>
 
     </section>
   )

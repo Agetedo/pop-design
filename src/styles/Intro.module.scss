@@ -1,29 +1,57 @@
 .intro {
-  height: 100vh;
-  background-color: rgb(76, 43, 107);/////
+  position: relative;
+  height: 100vh;//////////////
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url(/intro-bg.gif);
+  //background-image: url(/intro-bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  //background-color: rgb(76, 43, 107);/////
   // overflow-y: scroll;
 }
 .introImage {
-  animation: slide-out-elliptic-left-bck 3s ease-out both infinite;
+  padding: 0px 15px 0px 15px;
+  animation: flip-out-hor-top 3.5s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
 }
-
-@keyframes slide-out-elliptic-left-bck {
+@keyframes flip-out-hor-top {
   0% {
-    -webkit-transform: translateX(0deg) rotateY(180deg) scale(2);
-            transform: translateX(0deg) rotateY(180deg) scale(2);
-    -webkit-transform-origin: 2000px 80%;
-            transform-origin: 2000px 80%;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
     opacity: 1;
   }
   100% {
-    -webkit-transform: translateX(-1000px) rotateY(0) scale(0);
-            transform: translateX(-1000px) rotateY(0) scale(0);
-    -webkit-transform-origin: -200% 50%;
-            transform-origin: -200% 50%;
+    -webkit-transform: rotateX(70deg);
+            transform: rotateX(70deg);
+    opacity: 0;
+  }
+}
+.button {
+  position: absolute;
+  padding: 26px 70px;
+  background-color: blanchedalmond;
+  animation: scale-in-center 4.5s steps(1, start) 3.8s both;
+  transition: all 1s ease-in;
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
     opacity: 1;
   }
 }
+
+
+
+
+
+
+
 
