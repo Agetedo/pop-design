@@ -1,0 +1,29 @@
+.intro {
+  height: 100vh;
+  background-color: rgb(76, 43, 107);/////
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // overflow-y: scroll;
+}
+.introImage {
+  animation: slide-out-elliptic-left-bck 3s ease-out both infinite;
+}
+
+@keyframes slide-out-elliptic-left-bck {
+  0% {
+    -webkit-transform: translateX(0deg) rotateY(180deg) scale(2);
+            transform: translateX(0deg) rotateY(180deg) scale(2);
+    -webkit-transform-origin: 2000px 80%;
+            transform-origin: 2000px 80%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-1000px) rotateY(0) scale(0);
+            transform: translateX(-1000px) rotateY(0) scale(0);
+    -webkit-transform-origin: -200% 50%;
+            transform-origin: -200% 50%;
+    opacity: 1;
+  }
+}
+
