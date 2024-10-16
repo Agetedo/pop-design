@@ -1,0 +1,14 @@
+.intro {
+  position: relative;
+  height: 100vh;//////////////
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(76, 43, 107);/////
+  // overflow-y: scroll;
+}
+.button {
+  position: absolute;
+  padding: 26px 70px;
+  background-color: blanchedalmond;
+}
