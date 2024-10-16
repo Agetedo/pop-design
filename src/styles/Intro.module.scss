@@ -1,6 +1,7 @@
 .introWrapper {
   scroll-snap-type: y mandatory;
 }
+<<<<<<< HEAD
 .title { 
   margin: 50px 0 10px;/////
   margin: 0;/////
@@ -12,6 +13,19 @@
   letter-spacing: -3px;///
   line-height: 1.2;////
   color: var(--white-color);
+=======
+.title {
+  font-weight: 400;
+  margin: 50px 0 10px;/////
+  margin: 0;/////
+  color: var(--black-text-color);
+  //left: calc(50% + 130px);
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: -3px;
+  line-height: 1.2;
+  position: absolute;
+>>>>>>> origin/main
 }
 .introContent {
   height: 100vh;
@@ -21,7 +35,11 @@
   position: relative;
   scroll-snap-align: center;
   perspective: 500px;/////////////////////////////
+<<<<<<< HEAD
   background-color: var(--black-color);
+=======
+  background-color: var(--dark-blue-color);
+>>>>>>> origin/main
 }
 .introContent > div {
   width: 860px;////////////////
@@ -29,7 +47,11 @@
   position: relative;
   max-height: 90vh;
   margin: 10px;
+<<<<<<< HEAD
   //background: var(--white);///////////////////
+=======
+  background: var(--white);///////////////////
+>>>>>>> origin/main
   overflow: hidden;
 }
 img {
@@ -46,6 +68,10 @@ img {
   left: 0;
   right: 0;
   height: 5px;
+<<<<<<< HEAD
   background: var(--dark-blue-color);
+=======
+  background: var(--black-text-color);
+>>>>>>> origin/main
   bottom: 100px;
 }

@@ -36,6 +36,7 @@ export default function Intro() {
 function useParallax(value: MotionValue<number>, distance: number) {
   return useTransform(value, [0, 1], [-distance, distance]);
 }
+<<<<<<< HEAD
 interface ImageProps {
   imageSrc: string;
   imgAlt: string;
@@ -53,6 +54,23 @@ function Image({ imageSrc, imgAlt, title }: ImageProps) {
         <img src={imageSrc} alt={imgAlt} />
       </div>
       <motion.h2 style={{ y }} className={styles.title}>{`BankDash. ${title}`}</motion.h2>
+=======
+
+function Image({ title }: { title: string }) {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({ target: ref });
+  const y = useParallax(scrollYProgress, 300);
+  const imagesList = introImages.map(image =>
+    <img key={image.id} src={image.imageSrc} alt={image.imgAlt} />
+  );
+
+  return (
+    <section className={styles.introContent}>
+      <div ref={ref}>
+        {imagesList}
+      </div>
+      <motion.h2 style={{ y }} className={styles.title}>{`#Fsgd${title}`}</motion.h2>
+>>>>>>> origin/main
     </section>
   );
 }
