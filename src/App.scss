@@ -40,7 +40,8 @@ button, textarea {
   display: block;
 }
 html {
-  height: 100%;      
+  height: 100%;
+  position: relative;  
 }
 body {
   line-height: 1;
@@ -64,24 +65,15 @@ img, svg, picture {
   display: flex;
   flex-direction: column;
   min-height: 100vh; 
-  overscroll-behavior: none;
+  //overscroll-behavior: none;
 }
 :root {
   font-synthesis: none;////
   text-rendering: auto;/////
-
+  --dark-blue-color: #4C49ED;
   --white-color: #FFFFFF;
-  --black-text-color: #090909;
-  --orange-color: #C65C14;
-  --yellow-bg-color: #EBC76B;
-  --light-gray-bg-color: #D9D9D936;
-  --start-title-bg: #413c3c9d;
-  --start-text-shodow-color: #2c2828b4;
-  --error-message-color: #e81e1e;
-  --recipe-time-bg: #ebc76ba3;
-  --modal-bg-shadow: #00000080;
-
-
+  --black-color: #090909;
+  
 }
 body {
   display: flex;
@@ -92,8 +84,8 @@ body {
   font-size: 20px;
   font-weight: 500;
   font-style: normal;
-  background-color: var(--background);
-  color: var(--primary);
+  background-color: var(--white-color);
+  color: var(--black-text-color);
 }
 main {
   overflow: hidden;

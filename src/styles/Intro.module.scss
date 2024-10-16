@@ -1,57 +1,51 @@
-.intro {
-  position: relative;
-  height: 100vh;//////////////
+.introWrapper {
+  scroll-snap-type: y mandatory;
+}
+.title { 
+  margin: 50px 0 10px;/////
+  margin: 0;/////
+  position: absolute;
+  font-weight: 400;
+  //left: calc(50% + 130px);
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: -3px;///
+  line-height: 1.2;////
+  color: var(--white-color);
+}
+.introContent {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(/intro-bg.gif);
-  //background-image: url(/intro-bg.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  //background-color: rgb(76, 43, 107);/////
-  // overflow-y: scroll;
+  position: relative;
+  scroll-snap-align: center;
+  perspective: 500px;/////////////////////////////
+  background-color: var(--black-color);
 }
-.introImage {
-  padding: 0px 15px 0px 15px;
-  animation: flip-out-hor-top 3.5s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+.introContent > div {
+  width: 860px;////////////////
+  height: 600px;////////////////
+  position: relative;
+  max-height: 90vh;
+  margin: 10px;
+  //background: var(--white);///////////////////
+  overflow: hidden;
 }
-@keyframes flip-out-hor-top {
-  0% {
-    -webkit-transform: rotateX(0);
-            transform: rotateX(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: rotateX(70deg);
-            transform: rotateX(70deg);
-    opacity: 0;
-  }
-}
-.button {
+img {
   position: absolute;
-  padding: 26px 70px;
-  background-color: blanchedalmond;
-  animation: scale-in-center 4.5s steps(1, start) 3.8s both;
-  transition: all 1s ease-in;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
 }
-@keyframes scale-in-center {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
+.progress {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--dark-blue-color);
+  bottom: 100px;
 }
-
-
-
-
-
-
-
-
