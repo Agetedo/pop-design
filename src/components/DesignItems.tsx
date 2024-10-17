@@ -3,6 +3,7 @@ import DesignPages from "./DesignPages";
 import styles from "../styles/DesignItems.module.scss";
 
 export default function DesignItems() {
+  
   return (
     <div className={styles.designItems}>
       <DesignTitle 
