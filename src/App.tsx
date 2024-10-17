@@ -1,4 +1,3 @@
-
 import Intro from "./components/Intro";////////Убрать это компонент Интро-страницы(стоит там)
 import "./App.scss";
 
