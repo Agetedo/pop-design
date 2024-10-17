@@ -41,7 +41,6 @@ button, textarea {
 }
 html {
   height: 100%;
-  position: relative;  
 }
 body {
   line-height: 1;
@@ -65,16 +64,15 @@ img, svg, picture {
   display: flex;
   flex-direction: column;
   min-height: 100vh; 
-  //overscroll-behavior: none;
 }
 :root {
-  font-synthesis: none;////
-  text-rendering: auto;/////
-  --dark-blue-color: #4C49ED;
+  font-synthesis: none;
+  text-rendering: auto;
   --white-color: #FFFFFF;
-  --black-color: #090909;
-  --dark-grey-color: #343C6A;
-  --light-grey-color: 718EBF;
+  --dark-grey-color: #2c2a35;
+  --ligth-grey-color: #353541;
+  --blue-color: #006599;
+  
   
 }
 body {
@@ -82,21 +80,20 @@ body {
   flex-direction: column;
   min-height: 100vh; 
   min-width: 320px;
-  font-family: "Inter", sans-serif;//////////////////
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal; 
   font-size: 18px;
-  font-weight: 400;
-  font-style: normal;
-  background-color: var(--white-color);
-  color: var(--light-grey-color);
+  background-color: var(--ligth-grey-color);
+  color: var(--white-color);
 }
 main {
   overflow: hidden;
   flex-grow: 1;
 }
-footer {
-  flex-shrink: 0;
-  background-color: var(--yellow-bg-color);
-}
+
+
+
 //---Loader----------------------
 /*#dualRing {
   margin: 30px auto 128px auto;
