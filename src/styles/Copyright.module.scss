@@ -1,0 +1,15 @@
+.copyright {
+  position: absolute;
+  bottom: 30px;
+  left: calc(50vw - 185px);
+  background-color: var(--copyright-bg-color);
+  display: inline-block;
+  padding: 10px 30px;
+}
+.text {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  text-align: center;
+}
