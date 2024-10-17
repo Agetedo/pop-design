@@ -6,18 +6,18 @@ interface ButtonsType {
   
 export const buttons: ButtonsType[] = [{
   id: "bt1",
-  imgSrc: "",
+  imgSrc: "/buttonsIcons/welcome-icon.png",
   buttonText: "Welcome",
 }, {
   id: "bt2",
-  imgSrc: "",
+  imgSrc: "/buttonsIcons/team-icon.png",
   buttonText: "Our Team",
 }, {
   id: "bt3",
-  imgSrc: "",
+  imgSrc: "/buttonsIcons/work-icon.png",
   buttonText: "Our Work",
 }, {
   id: "bt4",
-  imgSrc: "",
+  imgSrc: "/buttonsIcons/contact-icon.png",
   buttonText: "Contact", 
 }];
