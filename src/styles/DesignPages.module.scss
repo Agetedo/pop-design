@@ -1,0 +1,11 @@
+.designPages {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 20px 20px; 
+}
+.page {
+  width: 163px;/////Это точный размер - сделат паддингами его
+  height: 163px;/////
+  background-color: aquamarine;
+}

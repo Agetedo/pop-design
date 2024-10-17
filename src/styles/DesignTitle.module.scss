@@ -1,0 +1,31 @@
+.designTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.title {
+  font-size: 50px;
+  line-height: 60px;
+  text-align: right;
+}
+.text {
+  max-width: 400px;
+  font-size: 19px;
+  line-height: 36px;
+  letter-spacing: 1px;
+  text-align: right;
+  text-wrap: pretty;
+}
+.titleAnimation {
+  display: inline-flex;
+  align-items: center;
+  max-width: 400px;
+  height: 3px;
+  background-color: var(--white-color);
+}
+.roll {
+  display: inline-block;
+  width: 60px;
+  height: 20px;
+  background-color: var(--white-color);
+}
