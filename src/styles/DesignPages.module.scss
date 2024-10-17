@@ -4,8 +4,35 @@
   grid-template-rows: 1fr 1fr; 
   gap: 20px 20px; 
 }
-.page {
-  width: 163px;/////Это точный размер - сделат паддингами его
-  height: 163px;/////
-  background-color: aquamarine;
+.pageButton { 
+  width: 165px;
+  height: 165px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid var(--white-color);
+  background-color: transparent;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+.buttonText {
+  margin-bottom: 10px;
+  font-size: 19px;
+  line-height: 28px;
+  color: var(--white-color);
+  text-align: center;
+}
+//---@media designPages--------------
+@media (hover: hover) and (pointer: fine) {
+  .pageButton:hover {
+    background-color: var(--ligth-grey-color);
+  }
+}
+  @media (hover: none) {
+  .pageButton:hover {
+    background-color: var(--ligth-grey-color);
+  }
 }
