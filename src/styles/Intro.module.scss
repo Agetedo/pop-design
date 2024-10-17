@@ -1,16 +1,15 @@
 .introWrapper {
   scroll-snap-type: y mandatory;
+  background: linear-gradient(0deg, (var(--dark-blue-color)) 0%, (var(--dark-grey-color)) 100%);
 }
 .title { 
   margin: 50px 0 10px;/////
   margin: 0;/////
   position: absolute;
-  font-weight: 400;
   //left: calc(50% + 130px);
-  font-size: 56px;
   font-weight: 700;
-  letter-spacing: -3px;///
-  line-height: 1.2;////
+  font-size: 56px;
+  line-height: 60px;
   color: var(--white-color);
 }
 .introContent {
@@ -20,16 +19,14 @@
   align-items: center;
   position: relative;
   scroll-snap-align: center;
-  perspective: 500px;/////////////////////////////
-  background-color: var(--dark-grey-color);
+  perspective: 500px;
 }
 .introContent > div {
-  width: 860px;////////////////
-  height: 600px;////////////////
+  width: 860px;
+  height: 600px;
   position: relative;
   max-height: 90vh;
   margin: 10px;
-  //background: var(--white);///////////////////
   overflow: hidden;
 }
 img {

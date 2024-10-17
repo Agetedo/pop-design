@@ -73,7 +73,8 @@ img, svg, picture {
   --dark-blue-color: #4C49ED;
   --white-color: #FFFFFF;
   --black-color: #090909;
-  --dark-grey-color:#343C6A;
+  --dark-grey-color: #343C6A;
+  --light-grey-color: 718EBF;
   
 }
 body {
@@ -81,12 +82,12 @@ body {
   flex-direction: column;
   min-height: 100vh; 
   min-width: 320px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
+  font-family: "Inter", sans-serif;//////////////////
+  font-size: 18px;
+  font-weight: 400;
   font-style: normal;
   background-color: var(--white-color);
-  color: var(--black-text-color);
+  color: var(--light-grey-color);
 }
 main {
   overflow: hidden;
