@@ -1,11 +1,11 @@
 .designTitle {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 42px;
 }
 .title {
   font-size: 50px;
-  line-height: 60px;
+  line-height: 72px;
   text-align: right;
 }
 .text {
@@ -21,6 +21,7 @@
   align-items: center;
   max-width: 400px;
   height: 3px;
+  border-radius: 1px;
   background-color: var(--white-color);
 }
 .roll {
@@ -28,4 +29,27 @@
   width: 60px;
   height: 20px;
   background-color: var(--white-color);
+  box-shadow: 7px 0px 10px var(--blue-color);
+  transition: all 1s ease;
+  //animation: slide-right 10s cubic-bezier(0.300, 0.500, 0.700, 0.900) both infinite;
+}
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(340px);
+            transform: translateX(340px);
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(340px);
+            transform: translateX(340px);
+  }
 }
