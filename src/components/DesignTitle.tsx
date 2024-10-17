@@ -4,7 +4,6 @@ interface TitleProps {
   title: string;
   text: string;
 }
-
 export default function DesignTitle({ title, text }: TitleProps) {
   return(
     <section className={styles.designTitle}>
