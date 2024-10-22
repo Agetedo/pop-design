@@ -1,17 +1,18 @@
-import { buttons } from "../dataBase/buttons";
+import WelcomePage from "./WelcomePage";
+import ButtonPage from "./ButtonPage";/////////////////////
 import styles from "../styles/DesignPages.module.scss";
 
 export default function DesignPages() {
-  const buttonsList = buttons.map( button =>
-    <button key={button.id} className={styles.pageButton}>
-      <img src={button.imgSrc} alt="#" />
-      <h2 className={styles.buttonText}>{button.buttonText}</h2>
-    </button>
-  )
-
+  
   return(
     <div className={styles.designPages}>
-      {buttonsList}
+      <WelcomePage />
+      <ButtonPage imgSrc={""} buttonText={""} />
+      <ButtonPage imgSrc={""} buttonText={""} />
+      <ButtonPage imgSrc={""} buttonText={""} />
     </div>
   );
 }
+//Отдельно объявить .pageButton(без списочного рендеринга) и в этот компонент <DesignPages />
+//будут приходить готовые 4страницы с креэйт-порталами (каждая из своего файла) 
+//<<props в своих файлах??? (посмотреть) 
