@@ -1,7 +1,7 @@
 .welcome {
   position: fixed;
   z-index: 10;
-  padding-top: 12%;
+  padding-top: 9.75%;
   left: 0;
   top: 0;
   width: 100%;
@@ -10,42 +10,47 @@
   cursor: default;
 }
 .welcomeContent {
+  max-width: 900px;
   position: relative;
   padding: 50px;
   margin: auto;
   background-color: var(--dark-grey-color);
-  width: 34.8%;
-  animation-name: animatetop;
-  animation-duration: 1s;
+  animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-duration: 0.5s;
 }
-.modalClose {
-  position: absolute; 
-  top: 15px; 
-  right: 15px;
-  padding: 4px;
-  border-radius: 3px;
-  display: inline-flex;
-  align-items: center;
-  gap: 20px;
-  background-color: var(--mint-color);
-  text-transform: lowercase;
-  color: var(--white-color);
-  border: none;
-  cursor: pointer;
-  transition: all 1s ease; 
-}
-@keyframes animatetop {
-  from {
-    top: -300px; 
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+            transform: translateZ(-1400px);
     opacity: 0;
   }
-  to {
-    top: 0; 
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
     opacity: 1;
   }
 }
-
+.modalClose {
+  position: absolute; 
+  top: 20px; 
+  right: 20px;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 1s ease; 
+}
 //---@media-welcome----------------------
+@media (hover: hover) and (pointer: fine) {
+  .modalClose:hover {
+    opacity: 0.7;
+  }
+}
+  @media (hover: none) {
+    .modalClose:hover {
+      opacity: 0.7;
+  }
+}
 /*@media(max-width: 1440px) {
   .welcomeContent {
     width: 502px;
@@ -59,12 +64,8 @@
     width: calc(300px + (502 - 300)*((100vw - 320px)/(768 - 320)));
     padding-bottom: calc(51px + (88 - 51)*((100vw - 320px)/(768 - 320)));
   }
-  .modalClose {
-    gap: calc(10px + (20 - 10)*((100vw - 320px)/(768 - 320)));
-    font-size: calc(11px + (15 - 11)*((100vw - 320px)/(768 - 320)));
-    img {
-      width: calc(11px + (24 - 11)*((100vw - 320px)/(768 - 320)));
-    }
+  .modalClose img {
+    width: calc(11px + (23 - 11)*((100vw - 320px)/(768 - 320)));
   }
 }
 @media (orientation: landscape) and (max-height: 500px)  {
