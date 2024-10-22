@@ -1,0 +1,49 @@
+.title {
+  margin-bottom: 27px;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 43px;
+}
+.contentItems {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+.text {
+  max-width: 487px;
+  font-weight: 300;
+  line-height: 34px;
+  letter-spacing: 1px;
+  text-wrap: pretty;
+}
+.buttonLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 43px;
+  background-color: var(--team-button-bg);
+  font-size: 21px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+//---@media teamContent--------------
+@media (hover: hover) and (pointer: fine) {
+  .buttonLink:hover {
+    background-color: var(--blue-color);
+    color: var(--dark-grey-color);
+  }
+}
+  @media (hover: none) {
+  .buttonLink:hover {
+    background-color: var(--blue-color);
+    color: var(--dark-grey-color);
+  }
+}
