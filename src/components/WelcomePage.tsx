@@ -2,16 +2,24 @@ import { useState } from "react";
 import { createPortal } from "react-dom";
 import closeIcon from "/modal-close-icon.png";
 import ButtonPage from "./ButtonPage";
+import { buttons } from "../dataBase/buttons";
 import styles from "../styles/WelcomePage.module.scss";
 
-
-//filter на кнопку
-
 export default function WelcomePage() {
+  const welcome = buttons.filter(modal =>
+    modal.buttonText === "Welcome"
+  );
   const [showModal, setShowModal] = useState(false);
+
   return (
     <>
-      <ButtonPage imgSrc={""} buttonText={"gghhjjh"} onClick={() => setShowModal(true)} />
+      {welcome.map(modal =>
+        <ButtonPage key={modal.id} 
+          imgSrc={modal.imgSrc} 
+          buttonText={modal.buttonText} 
+          onClick={() => setShowModal(true)} 
+        />
+      )}
       {showModal && createPortal(
         <ModalContent onClose={() => setShowModal(false)} />,
         document.body
