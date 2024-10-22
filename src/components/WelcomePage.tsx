@@ -4,6 +4,7 @@ import Conteiner from "./Conteiner";
 import closeIcon from "/modal-close-icon.png";
 import ButtonPage from "./ButtonPage";
 import { buttons } from "../dataBase/buttons";
+import WelcomeContent from "./WelcomeContent";
 import styles from "../styles/WelcomePage.module.scss";
 
 export default function WelcomePage() {
@@ -38,8 +39,8 @@ function ModalContent({ onClose }: ModalContentClose) {
       <Conteiner className={styles.welcomePage}>
         <div className={styles.welcomeContent}>
 
-          <p>{"Let Us help Your company grow!"}</p>
-        
+          <WelcomeContent title={"Welcome to Pop Design"} />
+          
           <button className={styles.modalClose} onClick={onClose}>
             <img src={closeIcon} alt="#" />
           </button>
