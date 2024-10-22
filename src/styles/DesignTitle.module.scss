@@ -31,7 +31,7 @@
   background-color: var(--white-color);
   box-shadow: 7px 0px 10px var(--blue-color);
   transition: all 1s ease;
-  //animation: slide-right 10s cubic-bezier(0.300, 0.500, 0.700, 0.900) both infinite;
+  animation: slide-right 10s cubic-bezier(0.300, 0.500, 0.700, 0.900) both infinite;
 }
 @keyframes slide-right {
   0% {
