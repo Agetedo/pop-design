@@ -2,7 +2,7 @@ import welcomeImage1 from "/welcome-1.jpg";
 import welcomeImage2 from "/welcome-2.jpg";
 import styles from "../styles/WelcomeContent.module.scss";
 
-export default function WelcomeContent({ title  }: {title: string}) {
+export default function WelcomeContent({ title  }: { title: string }) {
   return(
     <section className={styles.content}>
       <h2 className={styles.title}>{title}</h2>
