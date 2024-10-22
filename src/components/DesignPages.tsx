@@ -1,5 +1,7 @@
 import WelcomePage from "./WelcomePage";
-import ButtonPage from "./ButtonPage";/////////////////////
+import TeamPage from "./TeamPage";
+import WorkPage from "./WorkPage";
+import ContactPage from "./ContactPage";
 import styles from "../styles/DesignPages.module.scss";
 
 export default function DesignPages() {
@@ -7,9 +9,9 @@ export default function DesignPages() {
   return(
     <div className={styles.designPages}>
       <WelcomePage />
-      <ButtonPage imgSrc={""} buttonText={""} />
-      <ButtonPage imgSrc={""} buttonText={""} />
-      <ButtonPage imgSrc={""} buttonText={""} />
+      <TeamPage />
+      <WorkPage />
+      <ContactPage />
     </div>
   );
 } 
