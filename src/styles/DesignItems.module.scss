@@ -3,3 +3,10 @@
   align-items: center;
   gap: 50px;
 }
+//---@media-designItems-----------
+@media(max-width: 830px) {
+  .designItems {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
