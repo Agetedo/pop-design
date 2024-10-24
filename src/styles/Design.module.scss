@@ -9,3 +9,10 @@
   background-position: center center;
   background-size: cover;
 }
+@media(max-width: 830px) {
+  .design {
+    padding: 100px 0px 100px 0px;
+    height: 100%;
+    overflow-y: scroll;
+  }
+}
