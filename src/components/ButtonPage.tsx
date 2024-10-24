@@ -7,7 +7,7 @@ interface ButtonProps {
 }
 
 export default function ButtonPage({ onClick, imgSrc, buttonText }: ButtonProps) {
-  return(
+  return (
     <button className={styles.pageButton} onClick={onClick}>
       <img src={imgSrc} alt="#" />
       <h2 className={styles.buttonText}>{buttonText}</h2>
