@@ -40,7 +40,7 @@
   cursor: pointer;
   transition: all 1s ease; 
 }
-//---@media-welcome----------------------
+//---@media-pagePortal-------------
 @media (hover: hover) and (pointer: fine) {
   .modalClose:hover {
     opacity: 0.7;
@@ -51,40 +51,8 @@
     opacity: 0.7;
   }
 }
-/*@media(max-width: 1440px) {
-  .pageContent {
-    width: 502px;
+@media(max-width: 830px) {
+  .page {
+    padding-bottom: 10%;
   }
 }
-@media(max-width: 768px) {
-  .page {
-    padding-top: 31%;
-  }
-  .pageContent {
-    width: calc(300px + (502 - 300)*((100vw - 320px)/(768 - 320)));
-    padding-bottom: calc(51px + (88 - 51)*((100vw - 320px)/(768 - 320)));
-  }
-  .modalClose img {
-    width: calc(11px + (23 - 11)*((100vw - 320px)/(768 - 320)));
-  }
-}
-@media (orientation: landscape) and (max-height: 500px)  {
-  .page {
-    padding-top: 11%;
-  }
-  .pageContent {
-    padding-top: 40px;
-    padding-bottom: 37px;
-  }
-}
-@media (orientation: landscape) and (max-height: 375px)  {
-  .page {
-    padding-top: 6%;
-    padding-bottom: 50px;
-  }
-}
-@media (orientation: landscape) and (max-height: 320px) and (max-width: 480px) {
-  .page {
-    padding-top: 14%;
-  }
-}*/
