@@ -30,3 +30,9 @@
     background-color: var(--ligth-grey-color);
   }
 }
+@media(max-width: 830px) {
+  .pageButton { 
+    width: 134px;
+    height: 134px;
+  }
+}
