@@ -1,7 +1,7 @@
 .copyright {
   position: absolute;
   bottom: 30px;
-  left: calc(50vw - 185px);
+  left: calc(50vw - 182px);
   background-color: var(--copyright-bg-color);
   display: inline-block;
   padding: 10px 30px;
@@ -12,4 +12,16 @@
   line-height: 28px;
   letter-spacing: 1px;
   text-align: center;
+}
+//---@media-copyright-----------
+@media(max-width: 830px) {
+  .text {
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .copyright {
+    bottom: 10px;
+    left: calc(50vw - 145px);
+    padding: 5px 11.6px;
+  }
 }
