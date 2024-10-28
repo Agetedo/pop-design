@@ -1,11 +1,11 @@
 import teamImage from "/team.jpg";
 import styles from "../styles/TeamContent.module.scss";
-const teamText1 = <>{"When developing your custom solution, we ensure conformity with ISO 2700 and NIST 800 to make sure your web app is developed in line with benchmark security requirements. Our comprehensive InfoSec approach relies on multiple levels of protection."}</>;
-const teamText2 = <>{"When it comes to architecture design, we prepare your app for now and for the unexpected. That's why we create a robust, flexible server architecture."}</>;
-const teamText3 = <>{"We goes by your end user's needs, preferences, and behaviors to develop engaging web experiences"}</>;
+const teamText1 = "When developing your custom solution, we ensure conformity with ISO 2700 and NIST 800 to make sure your web app is developed in line with benchmark security requirements. Our comprehensive InfoSec approach relies on multiple levels of protection.";
+const teamText2 = "When it comes to architecture design, we prepare your app for now and for the unexpected. That's why we create a robust, flexible server architecture.";
+const teamText3 = "We goes by your end user's needs, preferences, and behaviors to develop engaging web experiences";
 
 export default function TeamContent({ title }: { title: string }) {
-  return(
+  return (
     <section className={styles.content}>
       <h2 className={styles.title}>{title}</h2>
 
@@ -23,12 +23,12 @@ export default function TeamContent({ title }: { title: string }) {
 } 
 
 interface TextContentProps {
-  text1: string | typeof teamText1;
-  text2: string | typeof teamText2;
-  text3: string | typeof teamText3;
+  text1: string;
+  text2: string;
+  text3: string;
 }
 function TextContent({ text1, text2, text3 }: TextContentProps) {
-  return(
+  return (
     <div className={styles.textContent}>
       <p className={styles.text}>{text1}</p>
       <p className={styles.text}>{text2}</p>
@@ -38,7 +38,7 @@ function TextContent({ text1, text2, text3 }: TextContentProps) {
 }
 
 function ImageContent({ imgAlt }: { imgAlt: string }) {
-  return(
+  return (
     <div className={styles.item}>
       <img src={teamImage} alt={imgAlt} />
     </div>
@@ -46,7 +46,7 @@ function ImageContent({ imgAlt }: { imgAlt: string }) {
 }
 
 function ButtonLink({ buttonText }: { buttonText: string }) {
-  return(
+  return (
     <a href="https://developer.mozilla.org" 
       rel="noopener" 
       target="_blank"
