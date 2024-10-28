@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import Wrapper from "./Wrapper";
 import closeIcon from "/modal-close-icon.png";
@@ -16,6 +16,15 @@ export default function PagePortal({ button, children }: PagePortalProps) {
     modal.buttonText === button
   );
   const [showModal, setShowModal] = useState(false);
+  
+  useEffect(() => {
+    if (showModal) {
+      document.body.style.overflow = "hidden";
+    }
+    else {
+      document.body.style.overflowY = "scroll";
+    }
+  }, [showModal]);
 
   return (
     <>
