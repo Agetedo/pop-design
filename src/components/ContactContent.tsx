@@ -6,11 +6,11 @@ const title = "Contact Us";
 
 export default function ContactContent() {
   return (
-    <>
+    <section className={styles.content}>
       <h2 className={styles.title}>{title}</h2>
       <p className={styles.text}>{contactText}</p>
       <ContactForm buttonText={"Submit"} />
-    </>
+    </section>
   );
 } 
 
