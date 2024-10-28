@@ -1,3 +1,6 @@
+.content {
+  margin-top: 10px;
+}
 .title {
   margin-bottom: 27px;
   font-weight: 300;
@@ -9,7 +12,8 @@
   align-items: flex-start;
   gap: 30px;
 }
-.item {
+.itemTop, 
+.itemBottom {
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -19,4 +23,13 @@
   line-height: 34px;
   letter-spacing: 1px;
   text-wrap: pretty;
+}
+//---@media WelcomeContent--------------
+@media(max-width: 768px) {
+  .contentItems {
+    flex-direction: column;
+  }
+  .itemBottom {
+    flex-direction: column-reverse;
+  }
 }
