@@ -39,7 +39,7 @@ function TextContent({ text1, text2, text3 }: TextContentProps) {
 
 function ImageContent({ imgAlt }: { imgAlt: string }) {
   return (
-    <div className={styles.item}>
+    <div className={styles.image}>
       <img src={teamImage} alt={imgAlt} />
     </div>
   );
