@@ -5,8 +5,7 @@ import ContactPage from "./ContactPage";
 import styles from "../styles/DesignPages.module.scss";
 
 export default function DesignPages() {
-  
-  return(
+  return (
     <div className={styles.designPages}>
       <WelcomePage />
       <TeamPage />
