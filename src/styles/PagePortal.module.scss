@@ -56,3 +56,8 @@
     padding-bottom: 10%;
   }
 }
+@media(max-width: 768px) {
+  .pageContent {
+    padding: 30px;
+  }
+}
