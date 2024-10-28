@@ -1,0 +1,102 @@
+@mixin placeholderStyle {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 29px;
+  color: var(--blue-color);
+}
+.title {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 43px;
+}
+.text {
+  margin-top: 18px;
+  font-weight: 300;
+  line-height: 34px;
+  letter-spacing: 1px;
+  text-wrap: pretty; 
+}
+.mail {
+  margin-top: 18px;
+  font-weight: 300;
+  line-height: 34px;
+  letter-spacing: 1px;
+  color: var(--blue-color);
+}
+.form {
+  margin: 30px 52px 0 52px;
+  textarea {
+    margin-top: 18px;
+    padding: 13px;
+    border: none;
+    overflow: auto;
+    resize: vertical;
+    width: 100%;
+    min-height: 180px;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 29px;
+    color: var(--white-color);
+    background-color: var(--ligth-grey-color);
+  }
+  textarea::placeholder {
+    @include placeholderStyle;
+  }
+}
+.formItems {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  input {
+    padding: 13px;
+    outline-style: none;
+    width: 100%;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 29px;
+    color: var(--white-color);
+    background-color: var(--ligth-grey-color);
+  }
+  input::placeholder {
+    @include placeholderStyle;
+  }
+}
+.formButton {
+  margin-top: 18px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 40px;
+  background-color: var(--blue-color);
+  font-size: 21px;
+  line-height: 32px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--white-color);
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.error {
+  margin-top: 6px;
+  padding: 0px 5px 0px 5px;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  color: var(--error-message-color);
+}
+//---@media-contactContent--------------
+@media (hover: hover) and (pointer: fine) {
+  .formButton:hover {
+    background-color: var(--white-color);
+    color: var(--ligth-grey-color);
+  }
+}
+@media (hover: none) {
+  .formButton:active {
+    background-color: var(--white-color);
+    color: var(--ligth-grey-color);
+  }
+}
