@@ -5,6 +5,9 @@
   line-height: 29px;
   color: var(--blue-color);
 }
+.content {
+  margin-top: 10px;
+}
 .title {
   font-weight: 300;
   font-size: 36px;
@@ -98,5 +101,16 @@
   .formButton:active {
     background-color: var(--white-color);
     color: var(--ligth-grey-color);
+  }
+}
+@media(max-width: 830px) {
+  .form {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+@media(max-width: 768px) {
+  .formItems {
+    flex-direction: column;
   }
 }
