@@ -5,7 +5,7 @@ interface TitleProps {
   text: string;
 }
 export default function DesignTitle({ title, text }: TitleProps) {
-  return(
+  return (
     <section className={styles.designTitle}>
       <h1 className={styles.title}>{title}</h1>
       <div className={styles.titleAnimation}>
