@@ -63,6 +63,19 @@ export default function WorkLinksSlider() {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
+        breakpoints={{
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          415: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 4,
+          },
+        }}
         className="works"
       >
         {slideList}
