@@ -33,7 +33,7 @@ interface Content1Props {
 }
 function Content1({ imgAlt1, text1, text2 }: Content1Props) {
   return (
-    <div className={styles.item}>
+    <div className={styles.itemTop}>
       <img src={welcomeImage1} alt={imgAlt1} />
       <p className={styles.text}>{text1}</p>
       <p className={styles.text}>{text2}</p>
@@ -48,7 +48,7 @@ interface Content2Props {
 }
 function Content2({ imgAlt2, text3, text4 }: Content2Props) {
   return (
-    <div className={styles.item}>
+    <div className={styles.itemBottom}>
       <p className={styles.text}>{text3}</p>
       <p className={styles.text}>{text4}</p>
       <img src={welcomeImage2} alt={imgAlt2} />
