@@ -76,3 +76,9 @@
     opacity: 0.7;
   }
 }
+@media(max-width: 768px) {
+  .swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 10px));
+  }
+}
