@@ -1,3 +1,6 @@
+.content {
+  margin-top: 10px;
+}
 .title {
   margin-bottom: 27px;
   font-weight: 300;
@@ -12,7 +15,7 @@
 .textContent {
   display: flex;
   flex-direction: column;
-  gap: 27px;
+  gap: 18px;
 }
 .text {
   max-width: 487px;
@@ -45,5 +48,19 @@
   .buttonLink:hover {
     background-color: var(--blue-color);
     color: var(--dark-grey-color);
+  }
+}
+@media(max-width: 854px) {
+  .contentItems {
+    flex-direction: column;
+  }
+  .text {
+    max-width: 100%;
+  }
+  .image {
+    display: none;
+  }
+  .buttonLink {
+    margin-top: 20px;
   }
 }
